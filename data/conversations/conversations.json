@@ -1,0 +1,121 @@
+{
+  "conversations": [
+    {
+      "conversation_id": "CONV-001",
+      "customer_id": "CUS-10023",
+      "case_id": "CASE-1001",
+      "channel": "chat",
+      "messages": [
+        {"role": "customer", "content": "Hi, my internet is not working. I can't load any website.", "timestamp": "2024-09-05T09:00:00Z"},
+        {"role": "agent", "content": "Hello! I'm sorry to hear that. Let me check your account. Could you please confirm your name?", "timestamp": "2024-09-05T09:00:30Z"},
+        {"role": "customer", "content": "Nandini Bhat.", "timestamp": "2024-09-05T09:00:45Z"},
+        {"role": "agent", "content": "Thank you, Nandini. I can see your account. Let me check if there are any outages in your area first.", "timestamp": "2024-09-05T09:01:00Z"},
+        {"role": "system", "content": "Agent checked outage dashboard - no outages in Malleshwaram area.", "timestamp": "2024-09-05T09:01:15Z"},
+        {"role": "agent", "content": "No outages detected in your area. Could you try restarting your router? Unplug it, wait 30 seconds, then plug it back in.", "timestamp": "2024-09-05T09:01:30Z"},
+        {"role": "customer", "content": "OK I did it. Still not working.", "timestamp": "2024-09-05T09:03:00Z"},
+        {"role": "agent", "content": "What color is the internet light on your router?", "timestamp": "2024-09-05T09:03:15Z"},
+        {"role": "customer", "content": "It's blinking amber.", "timestamp": "2024-09-05T09:03:30Z"}
+      ],
+      "extracted_facts": ["internet not working", "router restarted once", "internet light blinking amber"]
+    },
+    {
+      "conversation_id": "CONV-002",
+      "customer_id": "CUS-10001",
+      "case_id": "CASE-1002",
+      "channel": "phone",
+      "messages": [
+        {"role": "customer", "content": "Hi, my internet has been down since yesterday evening. I already restarted the router twice. Also my bill is higher this month than usual.", "timestamp": "2024-09-05T10:00:00Z"},
+        {"role": "agent", "content": "I'm sorry to hear that, Mr. Kulkarni. Let me check your account right away.", "timestamp": "2024-09-05T10:00:30Z"},
+        {"role": "customer", "content": "My bill was ₹899 last month. Now it shows ₹1199. Nobody told me about an increase.", "timestamp": "2024-09-05T10:01:00Z"},
+        {"role": "agent", "content": "I can see your account shows FiberMax 200 plan. Let me review the billing details and check on the connectivity issue.", "timestamp": "2024-09-05T10:01:30Z"},
+        {"role": "customer", "content": "This is very frustrating. I work from home and I need internet. Also I want to understand why my bill increased.", "timestamp": "2024-09-05T10:02:00Z"}
+      ],
+      "extracted_facts": ["internet down since yesterday", "router restarted twice", "current bill ₹1199", "expected bill ₹899", "works from home", "bill increase not communicated"]
+    },
+    {
+      "conversation_id": "CONV-003",
+      "customer_id": "CUS-10010",
+      "case_id": "CASE-1003",
+      "channel": "chat",
+      "messages": [
+        {"role": "customer", "content": "My bill suddenly doubled. I'm on FiberMax 200 plan at ₹899 per month. But now I got a bill for ₹1499.", "timestamp": "2024-09-05T11:00:00Z"},
+        {"role": "agent", "content": "Hello Ananya. Let me check your account details.", "timestamp": "2024-09-05T11:00:30Z"},
+        {"role": "customer", "content": "I never requested any plan change. My plan is the 200 Mbps plan. I've been on it for 2 years.", "timestamp": "2024-09-05T11:01:00Z"},
+        {"role": "agent", "content": "I can see your account. I want to verify — what plan do you believe you are currently on?", "timestamp": "2024-09-05T11:01:30Z"},
+        {"role": "customer", "content": "FiberMax 200. 200 Mbps. ₹899 per month. That's what I've always been on.", "timestamp": "2024-09-05T11:02:00Z"}
+      ],
+      "extracted_facts": ["customer believes plan is FiberMax 200", "customer believes monthly cost is ₹899", "current bill shows ₹1499", "customer denies requesting plan change"]
+    },
+    {
+      "conversation_id": "CONV-004",
+      "customer_id": "CUS-10007",
+      "case_id": "CASE-1004",
+      "channel": "chat",
+      "messages": [
+        {"role": "customer", "content": "Hi, can you tell me what the weather will be like tomorrow in Mumbai?", "timestamp": "2024-09-05T12:00:00Z"},
+        {"role": "agent", "content": "Hello! I'm a support specialist for broadband and mobile services. Could you help me understand what you need support with today?", "timestamp": "2024-09-05T12:00:30Z"},
+        {"role": "customer", "content": "I just want to know the weather. It's going to rain tomorrow right? My outdoor plans depend on it.", "timestamp": "2024-09-05T12:01:00Z"}
+      ],
+      "extracted_facts": ["customer asking for weather forecast", "not a telecom support request", "outside supported domain"]
+    },
+    {
+      "conversation_id": "CONV-005",
+      "customer_id": "CUS-10012",
+      "case_id": "CASE-1005",
+      "channel": "phone",
+      "messages": [
+        {"role": "customer", "content": "My internet is completely dead since I got back from my trip. I've been away for two weeks.", "timestamp": "2024-09-05T11:00:00Z"},
+        {"role": "agent", "content": "I understand. Have you tried restarting the router?", "timestamp": "2024-09-05T11:00:30Z"},
+        {"role": "customer", "content": "Yes! I've done that twice already. The router shows a red internet light.", "timestamp": "2024-09-05T11:01:00Z"},
+        {"role": "agent", "content": "I see. Let me check if all physical connections are secure. Is the cable going into the wall firmly connected?", "timestamp": "2024-09-05T11:01:30Z"},
+        {"role": "customer", "content": "Yes everything looks fine physically. I even reconnected all the cables. Still red light.", "timestamp": "2024-09-05T11:02:00Z"},
+        {"role": "agent", "content": "Understood. Let me escalate this to our technical team for a line check.", "timestamp": "2024-09-05T11:02:30Z"},
+        {"role": "customer", "content": "I work from home. I really need this fixed urgently. I've already spent 30 minutes troubleshooting.", "timestamp": "2024-09-05T11:03:00Z"}
+      ],
+      "extracted_facts": ["internet down since returning from 2-week trip", "router restarted twice", "internet light red", "physical cables reconnected", "works from home", "urgency expressed"]
+    },
+    {
+      "conversation_id": "CONV-006",
+      "customer_id": "CUS-10022",
+      "case_id": "CASE-1006",
+      "channel": "chat",
+      "messages": [
+        {"role": "customer", "content": "I was charged ₹150 for a data pack I didn't buy. I want this reversed.", "timestamp": "2024-09-05T08:00:00Z"},
+        {"role": "agent", "content": "Hello Rahul. Let me check your account. I can see a Weekly Pack purchase on 2 September at 11:23 PM through the MyAccount app.", "timestamp": "2024-09-05T08:01:00Z"},
+        {"role": "customer", "content": "That wasn't me. I was asleep at 11 PM.", "timestamp": "2024-09-05T08:01:30Z"},
+        {"role": "agent", "content": "The purchase was made from the app. Is it possible someone else had access to your phone or account?", "timestamp": "2024-09-05T08:02:00Z"},
+        {"role": "customer", "content": "No. I live alone. My phone is always with me.", "timestamp": "2024-09-05T08:02:30Z"}
+      ],
+      "extracted_facts": ["customer disputes ₹150 weekly pack charge", "system shows purchase at 11:23 PM on 2 Sep via app", "customer claims was asleep", "customer claims no unauthorized access to phone"]
+    },
+    {
+      "conversation_id": "CONV-007",
+      "customer_id": "CUS-10009",
+      "case_id": "CASE-1007",
+      "channel": "phone",
+      "messages": [
+        {"role": "customer", "content": "Hi, I need a replacement SIM. My current SIM is not working.", "timestamp": "2024-09-05T10:00:00Z"},
+        {"role": "agent", "content": "Hello Suresh. I can help with that. Let me check your account. I can see your SIM was replaced about 45 days ago.", "timestamp": "2024-09-05T10:00:30Z"},
+        {"role": "customer", "content": "Yes, that one seems to have stopped working too.", "timestamp": "2024-09-05T10:01:00Z"},
+        {"role": "agent", "content": "I understand. Per our policy, a second SIM replacement within 90 days has a fee of ₹99. Would you like to proceed?", "timestamp": "2024-09-05T10:01:30Z"},
+        {"role": "customer", "content": "Why do I have to pay? It's not my fault the SIM stopped working.", "timestamp": "2024-09-05T10:02:00Z"}
+      ],
+      "extracted_facts": ["second SIM replacement request within 90 days", "first replacement was 45 days ago", "₹99 fee applies per policy", "customer disputes fee", "cause of second SIM failure unclear"]
+    },
+    {
+      "conversation_id": "CONV-008",
+      "customer_id": "CUS-10018",
+      "case_id": "CASE-1008",
+      "channel": "phone",
+      "messages": [
+        {"role": "customer", "content": "I cancelled my account in July and I'm still getting billed. This is absolutely unacceptable.", "timestamp": "2024-09-05T09:00:00Z"},
+        {"role": "agent", "content": "I'm very sorry to hear this, Mr. Bose. Let me pull up your account immediately.", "timestamp": "2024-09-05T09:00:30Z"},
+        {"role": "customer", "content": "I called in and cancelled in early July. I have a reference number. The agent confirmed it was cancelled.", "timestamp": "2024-09-05T09:01:00Z"},
+        {"role": "agent", "content": "Let me check. Your account currently shows as Active in our system. I do not see a cancellation record.", "timestamp": "2024-09-05T09:01:30Z"},
+        {"role": "customer", "content": "That's your problem. I want refunds for July, August, and September. That's ₹4,497 you've wrongly charged me.", "timestamp": "2024-09-05T09:02:00Z"},
+        {"role": "agent", "content": "I completely understand your frustration. This requires urgent investigation as I cannot see the cancellation record. Let me escalate this immediately.", "timestamp": "2024-09-05T09:02:30Z"}
+      ],
+      "extracted_facts": ["customer claims account cancelled in July 2024", "customer has a reference number from cancellation call", "account shows as Active in system", "no cancellation record found", "customer claims ₹4497 wrongly charged", "3 months of billing disputed"]
+    }
+  ]
+}

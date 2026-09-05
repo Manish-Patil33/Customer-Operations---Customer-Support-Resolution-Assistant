@@ -1,0 +1,47 @@
+# Environment variables — NEVER commit
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Node / Frontend development
+frontend/node_modules/
+frontend/.vite/
+# DO NOT gitignore frontend/dist — it must be committed!
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary build artifacts
+temp_audio/
+
+# RAG index — commit these!
+# rag_index/ — DO NOT add to gitignore
